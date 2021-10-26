@@ -1,8 +1,9 @@
 <div class="d-flex flex-column flex-grow-1 overflow-hidden">
   <ul ngbNav #nav="ngbNav" class="nav-tabs">
     <li ngbNavItem>
-      <a ngbNavLink>First</a>
+      <a ngbNavLink>Kendo TextArea (with built-in autosize input)</a>
       <ng-template ngbNavContent>
+        <p>Kendo TextArea (with built-in autosize input)</p>
         <p>This tab is using a KendoTextArea with AutoSize = true</p>
         <textarea kendoTextArea [autoSize]="true" class="form-control">
     Continue typing in this
@@ -19,10 +20,28 @@
       </ng-template>
     </li>
     <li ngbNavItem>
-      <a ngbNavLink>Second</a>
+      <a ngbNavLink>Native HTML TextArea with ngx-autosize</a>
       <ng-template ngbNavContent>
+        <p>Native HTML TextArea with ngx-autosize</p>
         <p>This tab is using default TextArea with ngx-autosize directive</p>
         <textarea autosize class="form-control">
+    Continue typing in this
+          textarea
+          asdfas
+          dfsadfasd
+          asdf
+          asd
+          fasd
+          f... </textarea
+        >
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Kendo TextArea with ngx-autosize</a>
+      <ng-template ngbNavContent>
+        <p>Kendo TextArea with ngx-autosize</p>
+        <p>This tab is using default TextArea with ngx-autosize directive</p>
+        <textarea kendoTextArea autosize class="form-control">
     Continue typing in this
           textarea
           asdfas
